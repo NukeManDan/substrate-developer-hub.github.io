@@ -12,7 +12,7 @@
       "knowledgebase/learn-substrate/account-abstractions",
       "knowledgebase/learn-substrate/session-keys",
       "knowledgebase/learn-substrate/weight",
-      "knowledgebase/learn-substrate/off-chain-workers"
+      "knowledgebase/learn-substrate/off-chain-features"
     ],
     "Runtime": [
       "knowledgebase/runtime/index",
@@ -25,17 +25,18 @@
       "knowledgebase/runtime/origin",
       "knowledgebase/runtime/execution",
       "knowledgebase/runtime/events",
+      "knowledgebase/runtime/errors",
       "knowledgebase/runtime/fees",
       "knowledgebase/runtime/off-chain-workers",
       "knowledgebase/runtime/debugging",
       "knowledgebase/runtime/tests",
-      "knowledgebase/runtime/randomness"
+      "knowledgebase/runtime/randomness",
+      "knowledgebase/runtime/upgrades"
     ],
     "Smart Contracts": [
       "knowledgebase/smart-contracts/overview",
       "knowledgebase/smart-contracts/index",
       "knowledgebase/smart-contracts/ink-fundamentals",
-      "knowledgebase/smart-contracts/env-types",
       "knowledgebase/smart-contracts/ink-development",
       "knowledgebase/smart-contracts/evm-pallet",
       "knowledgebase/smart-contracts/faq"
@@ -68,20 +69,27 @@
       "tutorials/create-your-first-substrate-chain/interact"
     ]
   },
-  "build-a-dapp": {
-    "Build a PoE Decentralized Application": [
-      "tutorials/build-a-dapp/index",
-      "tutorials/build-a-dapp/prepare",
-      "tutorials/build-a-dapp/pallet",
-      "tutorials/build-a-dapp/front-end"
-    ]
-  },
   "add-a-pallet": {
     "Add a Pallet to Your Runtime": [
       "tutorials/add-a-pallet/index",
       "tutorials/add-a-pallet/import-a-pallet",
       "tutorials/add-a-pallet/configure-a-pallet",
       "tutorials/add-a-pallet/use-a-pallet"
+    ]
+  },
+  "upgrade-a-chain": {
+    "Perform a Forkless Upgrade": [
+      "tutorials/upgrade-a-chain/index",
+      "tutorials/upgrade-a-chain/sudo-upgrade",
+      "tutorials/upgrade-a-chain/scheduled-upgrade"
+    ]
+  },
+  "build-a-dapp": {
+    "Build a PoE Decentralized Application": [
+      "tutorials/build-a-dapp/index",
+      "tutorials/build-a-dapp/prepare",
+      "tutorials/build-a-dapp/pallet",
+      "tutorials/build-a-dapp/front-end"
     ]
   },
   "start-a-private-network": {
@@ -101,5 +109,12 @@
   },
   "visualize-node-metrics": {
     "Visualize Node Metrics": []
+  },
+  "build-permission-network": {
+    "Build a permissioned network": [
+      "tutorials/build-permission-network/index",
+      "tutorials/build-permission-network/add-node-authorization-pallet",
+      "tutorials/build-permission-network/launch-network"
+    ]
   }
 }

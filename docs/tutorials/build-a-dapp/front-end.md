@@ -12,6 +12,9 @@ We will give you a custom React component that you can use to interact with your
 To start the Front-End Template, navigate to its directory and run:
 
 ```bash
+# Install dependencies if this is the first time you run front-end template 
+yarn install
+# Start the template
 yarn start
 ```
 
@@ -44,9 +47,16 @@ substrate-front-end-template
 
 Delete the entire contents of that file, and replace it with the following:
 
-<div style="max-height: 20em; overflow: auto; margin-bottom: 1em;">
+<div class="overflow-code">
+  <style>
+    .overflow-code + pre {
+      max-height: 20em;
+      overflow-y: scroll;
+    }
+  </style>
+</div>
 
-```js
+```javascript
 // React and Semantic UI elements.
 import React, { useState, useEffect } from 'react';
 import { Form, Input, Grid, Message } from 'semantic-ui-react';
@@ -131,7 +141,7 @@ export function Main (props) {
             type='file'
             id='file'
             label='Your File'
-            onChange={(e) => handleFileChosen(e.target.files[0])}
+            onChange={ e => handleFileChosen(e.target.files[0]) }
           />
           {/* Show this message if the file is available to be claimed */}
           <Message success header='File Digest Unclaimed' content={digest} />
@@ -189,8 +199,6 @@ export default function TemplateModule (props) {
 }
 ```
 
-</div>
-
 We won't walk you step by step through the creation of this component, but do look over the code
 comments to learn what each part is doing.
 
@@ -229,8 +237,8 @@ experience short and satisfying. However, we want you to keep learning!
 To learn more about building your own pallets, explore the
 [Substrate Recipes](https://substrate.dev/recipes).
 
-Complete the [Add a Pallet](../add-a-pallet/) tutorial to learn how to extend the Node Template
-with additional capabilities from Substrate's set of
+Complete the [Add a Pallet](../add-a-pallet/) tutorial to learn how to extend the Node Template with
+additional capabilities from Substrate's set of
 [core FRAME pallets](../../knowledgebase/runtime/frame).
 
 Substrate is written in the Rust programming language, which has a great community and many helpful
